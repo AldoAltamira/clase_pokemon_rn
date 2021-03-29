@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
+    "android": "npx react-native run-android",
+    "ios": "npx react-native run-ios",
+    "start": "npx react-native start",
     "test": "jest",
     "lint": "eslint ."
   },
@@ -13,6 +13,7 @@
     "@react-native-async-storage/async-storage": "^1.14.1",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.9.3",
+    "@react-navigation/stack": "^5.14.3",
     "axios": "^0.21.1",
     "react": "16.13.1",
     "react-native": "0.63.4",
@@ -22,6 +23,7 @@
     "react-native-safe-area-context": "^3.2.0",
     "react-native-screens": "^2.18.1",
     "react-native-vector-icons": "^8.1.0",
+    "react-redux": "^7.2.3",
     "redux": "^4.0.5"
   },
   "devDependencies": {
