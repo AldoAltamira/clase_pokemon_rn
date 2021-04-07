@@ -25,7 +25,6 @@ let styles = StyleSheet.create({
     borderStyle: 'solid',
     borderWidth: 1,
     borderColor: Colors.gray,
-    backgroundColor: Colors.cgBlack,
   },
   labelInputStyleModal: {
     color: Colors.cgBlack,

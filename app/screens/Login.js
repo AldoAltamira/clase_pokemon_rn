@@ -11,12 +11,17 @@ import {setObjectValue, getMyObject} from '../utils/Async';
 import DispatchEvents from '../utils/Dispatchs';
 import Colors from '../style/Colors';
 
+// Importar estos 2 elementos y mandarlos a llamar de esta forma para obtener los datos de redux
+
+// import {useSelector} from 'react-redux';
+// import {Selectors} from '../utils/Selectors';
+// const selectors = useSelector(Selectors);
+
 let Login = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [disabled, setDisabled] = useState(false);
   const {login} = DispatchEvents();
-
   const getUser = async () => {
     getMyObject('User')
       .then((user) => {
@@ -68,7 +73,7 @@ let Login = ({navigation}) => {
 
   return (
     <View style={styles.containerCenter}>
-      <KeyboardAvoidingView style={styles.container}>
+      <KeyboardAvoidingView>
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
           <View style={styles.spaceAround}>
             <View style={styles.centerDiv}>
