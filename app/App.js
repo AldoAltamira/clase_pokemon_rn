@@ -17,7 +17,7 @@ const App = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <View style={styles.container}>
-          {Platform.OS === 'ios' && <StatusBar barStyle="light-content" />}
+          {Platform.OS === 'ios' && <StatusBar barStyle="dark-content" />}
           <AppNavigator />
         </View>
       </PersistGate>
